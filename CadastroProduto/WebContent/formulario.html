@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário HTML</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+    <form class="formulario" method="post" action="srlvCadastro"> 
+        <p> Faça o cadastro do produto</p>
+        
+        <div class="field">
+            <label for="Codproduto">Código de produto: </label>
+            <input type="text" id="Codproduto" name="Codproduto" placeholder="Código de produto:*" required>
+        </div>
+        
+        <div class="field">
+            <label for="Descricao">Descrição:</label>
+            <input type="text" id="Descricao" name="Descricao" placeholder="Descrição:">
+        </div>
+
+        <div class="field">
+            <label for="Unidademed">A unidade de medida do produto:</label>
+            <input type="text" id="Unidademed" name="Unidademed" placeholder="A unidade de medida do produto:" required>
+        </div>  
+        
+        <div class="field">
+            <label for="Local">Localidade onde ficará o produto:</label>
+            <input type="text" id="Local" name="Local" placeholder="Localidade onde ficara o produto:" required>
+        </div>   
+        
+         <div class="field">
+            <label for="Local">Preço de aquisição:</label>
+            <input type="number" id="Preco" name="Preco"  required>
+        </div>   
+        
+         <div class="field">
+            <label for="Local">Data de entrada do produto:</label>
+            <input type="date" id="Data" name="Data"  required>
+        </div>    
+        
+        <div class="field">
+            <label for="Local">Departamento responsável: </label>
+            <input type="text" id="Depart" name="Depart" placeholder="Departamento responsavel:" required>
+        </div>  
+        
+        <div class="field">
+            <label for="mensagem">Observações: </label>
+            <textarea name="mensagem" id="Observ" placeholder="Observações:" required></textarea>
+        </div>
+
+        <input type="submit" name="acao" value="Enviar">
+        <input type="submit" name="acao1" value="Editar">
+        <input type="submit" name="acao2" value="Pesquisar">
+        <input type="submit" name="acao" value="Excluir">
+        
+    </form>
+</body>
+</html>
